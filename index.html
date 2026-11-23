@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rakas – Sahabat Anda Atasi Sampah</title>
+<meta name="description" content="Rakas: aplikasi pemilahan sampah anorganik dan marketplace produk daur ulang UMKM lokal di Kota Surabaya.">
+<meta name="theme-color" content="#7b4fa6">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;800&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<header class="hd"><a href="#" class="logo">RAKAS</a><nav class="nav"><a href="#fitur">Fitur</a><a href="#cara">Cara Kerja</a><a href="#bisnis">Bisnis</a><a href="#rencana">Rencana</a></nav><a class="btn" href="#app" id="cta">Coba Aplikasi</a></header>
+
+<main id="land">
+<div class="hero"><h1>RAKAS</h1><b>by Krastala Team</b><p>Sahabat Anda Atasi Sampah. Pilah sampah anorganik, dijemput driver, dapatkan Rakas Points, lalu belanja produk daur ulang UMKM lokal di Kota Surabaya.</p><a class="btn" href="#app">Mulai Sekarang</a></div>
+
+<section class="sec"><h2>Masalah yang kami selesaikan</h2><p class="sub">Pengelolaan sampah anorganik masih jadi masalah besar. Data awal kami dari Kabupaten Gresik, wilayah studi pertama. Rakas kini difokuskan untuk warga Kota Surabaya.</p>
+<div class="g"><div class="c"><div class="big">140 ton</div><p>sampah tertimbun tiap harinya dan 62% di antaranya belum terkelola</p></div><div class="c"><div class="big">9 dari 10</div><p>orang di Kab. Gresik kesulitan mengelola sampah anorganik</p></div><div class="c"><div class="e">🏔️</div><p>Kurangnya kesadaran masyarakat dan tumpukan sampah yang menggunung</p></div></div></section>
+
+<section class="sec" style="padding-top:0"><h2>Visi &amp; Misi</h2><div class="c"><p style="color:var(--tx);font-size:17px">Menjadi aplikasi penggerak sistem pengelolaan sampah anorganik yang efektif sekaligus pemberdayaan UMKM kreatif lokal pertama di Kota Surabaya.</p>
+<span class="chip">♻️ Pengelolaan &amp; pemilahan sampah efisien</span><span class="chip">🌿 Melindungi kelestarian alam</span><span class="chip">🏪 Memajukan UMKM kreatif lewat platform digital</span></div></section>
+
+<section class="sec" id="fitur"><h2>Fitur</h2><p class="sub">Semuanya bisa dicoba langsung di aplikasi.</p>
+<div class="g"><div class="c"><div class="e">📦</div><h3>Go-Kas</h3><p>Pendataan sampah berdasarkan kategori untuk diangkut Driver sesuai lokasi User.</p></div>
+<div class="c"><div class="e">🛒</div><h3>MarKas</h3><p>Platform digital UMKM kreatif lokal. Belanja produk daur ulang dengan Rakas Points.</p></div>
+<div class="c"><div class="e">🧮</div><h3>Kaskulasi</h3><p>Mendata Rakas Points yang didapat dan menyajikan grafik persentase per kategori sampah.</p></div>
+<div class="c"><div class="e">🔎</div><h3>KaSearch</h3><p>Edukasi sistem pengelolaan sampah dengan informasi beragam dan informatif.</p></div></div></section>
+
+<section class="sec" id="cara"><h2>Cara penggunaan</h2><p class="sub">Sistem kerja Rakas dalam 7 langkah.</p>
+<ol class="steps"><li>Login / daftar akun</li><li>Jual sampah di Go-Kas</li><li>Driver mengangkut sampah</li><li>Terima Rakas Points</li><li>Kalkulasi sampah di Kaskulasi</li><li>Belanja di MarKas</li><li>Tukar ke e-money</li></ol>
+<p><a class="btn g" href="#app">Praktikkan sekarang</a></p></section>
+
+<section class="sec" id="bisnis"><h2>Ukuran pasar</h2><p class="sub">Target pasar di Kota Surabaya. TAM memakai jumlah penduduk Kota Surabaya sekitar 3,02 juta jiwa (BPS Kota Surabaya, 2024). SAM dan SOM memakai rasio pitch deck (320.000 dan 300.000 dari 1,3 juta penduduk Gresik); sesuaikan sesuai riset kamu.</p>
+<div class="c sim"><div class="g"><div><label>TAM: penduduk Kota Surabaya (jiwa)</label><input type="number" id="s8" value="3020000"></div><div><label>SAM (% dari TAM)</label><input type="number" id="s9" value="24.6" step="0.1"></div><div><label>SOM (% dari TAM)</label><input type="number" id="s10" value="23.1" step="0.1"></div></div>
+<p style="margin-bottom:0"><b>TAM</b> (Total Addressable Market): <b id="m1"></b> penduduk</p><div class="bar"><i id="b1"></i></div>
+<b>SAM</b> (Service Addressable Market): <b id="m2"></b> penduduk<div class="bar"><i id="b2"></i></div>
+<b>SOM</b> (Service Obtainable Market): <b id="m3"></b> penduduk<div class="bar"><i id="b3"></i></div></div>
+<h2 style="margin-top:30px">Simulator proyeksi pendapatan</h2><p class="sub">Angka awal sesuai pitch deck (skenario awal di Gresik). Ubah untuk skenario Surabaya.</p>
+<div class="g sim"><div class="c"><h3>📦 Go-Kas</h3><label>Jumlah user</label><input type="number" id="s1" value="75000"><label>Sampah per user per pekan (kg)</label><input type="number" id="s2" value="1"><label>Tarif transaksi (Rp/kg)</label><input type="number" id="s3" value="1000"><label>Jumlah pekan</label><input type="number" id="s4" value="4"><div class="res" id="r1"></div></div>
+<div class="c"><h3>🛒 MarKas</h3><label>Seller aktif</label><input type="number" id="s5" value="250"><label>Pendapatan seller per bulan (Rp)</label><input type="number" id="s6" value="2500000"><label>Bagi hasil (%)</label><input type="number" id="s7" value="10"><div class="res" id="r2"></div></div></div>
+<div class="tot">Total pendapatan<br><b id="r3"></b></div></section>
+
+<section class="sec"><h2>Strategi pemasaran</h2><div class="g"><div class="c"><h3>Direct</h3><span class="chip">Event &amp; Seminar</span><span class="chip">Diskon &amp; Promo</span><span class="chip">Kuisioner Feedback</span></div><div class="c"><h3>Indirect</h3><span class="chip">Instagram</span><span class="chip">Facebook</span><span class="chip">Gmail</span><span class="chip">TikTok</span><span class="chip">Google Ads</span><span class="chip">YouTube</span></div><div class="c"><h3>Kolaborasi</h3><span class="chip">Dinas Lingkungan Hidup Kota Surabaya (target kolaborasi)</span><span class="chip">ADUPI</span></div></div>
+<h3 style="margin-top:20px;color:var(--pu)">Keunggulan dibanding kompetitor</h3><span class="chip">✓ Pengangkutan langsung</span><span class="chip">✓ Market place</span><span class="chip">✓ Kalkulasi data sampah</span><span class="chip">✓ Fitur edukasi</span><span class="chip">✓ Desain user-friendly</span></section>
+
+<section class="sec" id="rencana"><h2>Rencana pengembangan</h2><div class="g"><div class="c"><h3>2024</h3><p>Perancangan UI/UX. Kerja sama dengan Dinas Lingkungan Hidup Kota Surabaya dan ADUPI.</p></div><div class="c"><h3>2025</h3><p>Rilis MVP, sosialisasi dan promosi ke warga Surabaya, pengembangan Android &amp; iOS.</p></div><div class="c"><h3>2026</h3><p>Pembenahan dan upgrade fitur berkala, ekspansi ke kota lain hingga skala nasional.</p></div></div>
+<p class="sub" style="margin-top:20px">Tim Krastala: Aqila Shafira (CEO), Sifania Zelda (CFO), Balian Ndaru (CMO).</p></section>
+<footer>© Rakas by Krastala Team</footer>
+</main>
+
+<div id="app"></div><div id="toast"></div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body></html>
